@@ -19,3 +19,13 @@
 ## Challenge
 
 See [`doc/challenge/README.md`](./doc/challenge/README.md)
+
+
+## API
+
+- send money
+  - URL: {domain}/api/v1/payments 
+  - METHOD: POST
+  - BODY: { "user_id":1, "amount": 2, "note": "my notes...", "receive_by": {"email": "fernande@example.name"}}
+    - (here we can also receive_by email by phone_number )
+    - user_id is sender user id
