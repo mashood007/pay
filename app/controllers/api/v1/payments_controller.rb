@@ -20,6 +20,7 @@ module Api
       private
 
       def current_user
+        puts params,'-------'
         @current_user = Account.find(params[:user_id])
       end
 
