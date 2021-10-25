@@ -1,0 +1,15 @@
+example_id                               | status  | run_time        |
+---------------------------------------- | ------- | --------------- |
+./spec/models/account_spec.rb[1:1]       | passed  | 0.20677 seconds |
+./spec/models/account_spec.rb[1:2:1]     | passed  | 0.00766 seconds |
+./spec/models/account_spec.rb[1:2:2]     | passed  | 0.00596 seconds |
+./spec/models/account_spec.rb[1:2:3]     | passed  | 0.00585 seconds |
+./spec/models/account_spec.rb[1:2:4]     | passed  | 0.00672 seconds |
+./spec/models/account_spec.rb[1:3]       | passed  | 0.00261 seconds |
+./spec/models/account_spec.rb[1:4]       | passed  | 0.00942 seconds |
+./spec/models/account_spec.rb[1:5]       | passed  | 0.00371 seconds |
+./spec/models/transaction_spec.rb[1:1]   | pending | 0.00001 seconds |
+./spec/models/transaction_spec.rb[1:2]   | passed  | 0.22319 seconds |
+./spec/models/transaction_spec.rb[1:3:1] | passed  | 0.00574 seconds |
+./spec/models/transaction_spec.rb[1:3:2] | passed  | 0.00525 seconds |
+./spec/models/transaction_spec.rb[1:3:3] | passed  | 0.00577 seconds |

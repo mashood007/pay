@@ -9,7 +9,7 @@
 #  first_name   :string
 #  last_name    :string
 #  phone_number :string
-#  status       :integer          default(0), not null
+#  status       :integer          default("pending"), not null
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #
@@ -34,4 +34,15 @@ RSpec.describe Account, type: :model do
     it { is_expected.to validate_presence_of(:phone_number) }
     it { is_expected.to validate_presence_of(:email) }
   end
+
+  it 'is varified user' do
+    account.status = :verified
+    expect(account.verified_status?).to be_truthy
+  end
+
+  it 'should have balance' do
+    expect(account.balance).to be >= 0
+  end
+
+  it { is_expected.to respond_to(:can_pay?) }
 end
