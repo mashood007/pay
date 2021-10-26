@@ -1,0 +1,37 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/payments":
+    post:
+      summary: create payment
+      tags:
+      - payments
+      parameters: []
+      responses:
+        '201':
+          description: payments created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id: 1
+                amount:
+                  type: integer
+                note:
+                  type: string
+                receive_by:
+                  type: object
+              required:
+              - user_id
+              - amount
+              - receive_by
+servers:
+- url: http://{defaultHost}
+  variables:
+    defaultHost:
+      default: localhost:3000
